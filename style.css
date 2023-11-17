@@ -34,7 +34,19 @@ footer {
     height: 100px;
 }
 
-/* general main-top*/
+/* general main-header */
+
+.header-button {
+    position: relative;
+}
+
+.header-button > a {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+/* general main-top */
 .main-top {
     display: flex;
     justify-content: center;
