@@ -10,78 +10,88 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.flex {
+.container {
     display: flex;
-}
-
-.nav-laterale {
-    flex-direction: column;
-    width: 20%;
-    min-height: 1000px;
-    background-color: aquamarine;
-}
-
-.container-main {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    min-height: 100%;
-    background-color: green;
-}
-
-.nav-top {
-    height: 50px;
-    background-color: violet;
-}
-
-.content {
-    min-height: 1100px;
-    background-color: gold;
-}
-
-.nav-bottom {
-    height: 50px;
-    width: 100%;
-    background-color: grey; 
-}
-
-/* nav-laterale*/
-
-.container-logo {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.logo-spotify {
-    margin-right: 5px;   
-}
-
-.container-nav {
-    margin: 20px 20px;
-}
-
-.container-nav-lateral {
     flex-wrap: wrap;
 }
 
-.container-nav ul li{
-   list-style: none; 
+aside {
+    width: 200px;
 }
 
+main {
+    height: calc(100vh - 100px);
+    width: calc(100% - 200px);
+}
 
+header {
+    position: fixed;
+    height: 100px;
+    width: calc(100% - 200px);
+}
 
+footer {
+    height: 100px;
+}
+
+/* general main-top*/
+.main-top {
+    display: flex;
+    justify-content: center;
+}
+
+.main-top > ul li {
+    display: inline-block;
+}
+
+/* general card*/
+.container-card {
+    overflow-y: scroll;
+    padding-top: 110px;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    width: calc((100% / 6) - 20px);
+    height: 100px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+   
+    margin-left: 10px;
+}
 
 /* debug */
 
-.debug .logo-spotify {
-    height: 25px;
-    width: 50px;
-    border: 2px dashed black;
+.debug aside {
+    background-color: brown;
 }
 
-.debug .text-spotify {
-    height: 25px;
-    width: 50px;
-    border: 2px dashed black;
+.debug main {
+    background-color: aqua;
+}
+
+.debug footer {
+    background-color: blueviolet;
+}
+
+.debug header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.debug .container-card {
+    background-color: blanchedalmond;
+}
+
+.debug .card {
+    border: 1px dashed black;
 }
