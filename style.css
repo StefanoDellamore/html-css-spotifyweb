@@ -38,21 +38,42 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.container-header {
-    padding-top: 110px;
+.container-main {
+    padding: 110px 10px 0;
     height: 100%;
 }
 
-/* header */
+/* aside */
 
-.container-header nav ul {
+.container-aside {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 10px;
+}
+
+.aside-logo-spotify {
+    height: 100px;
+}
+
+.info-aside {
+    height: 80px;
+}
+
+.nav-aside {
+    height: calc(100% - 180px);
+}
+
+/* nav */
+
+.container-main nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     color: grey ;
 }
 
-.container-header nav ul li {
+.container-main nav ul li {
     margin-right: 20px;
 }
 
@@ -60,7 +81,44 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* debug*/
+/* row */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px -10px 0;
+}
+
+.card {
+    width: calc(100% / 6 - 20px );
+    margin: 0 10px;
+}
+
+/* footer */
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 1100px){
+    
+}
+
+@media screen and (max-width: 700px){
+    
+}
+
+@media screen and (max-width: 600px){
+    
+}
+
+/* debug */
 
 footer {
     background-color: aqua;
@@ -73,4 +131,12 @@ footer {
 aside,
 main {
     border: 2px dashed black;
+}
+
+.card {
+    border: 1px dashed black;
+}
+
+.container-aside > * {
+    border: 1px dashed black;
 }
