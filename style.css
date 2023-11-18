@@ -45,8 +45,7 @@ header {
 
 /* aside */
 
-.container-aside {
-    position: relative; 
+.container-aside { 
     width: 100%;
     height: 100%;
     padding: 0 10px 10px;
@@ -62,6 +61,23 @@ header {
 
 .nav-aside {
     height: calc(100% - 180px);
+}
+
+/* header */
+
+.link-upgrade {
+    position: relative;
+}
+
+.link-upgrade > a {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: red;
+    color: white;   
 }
 
 /* nav */
@@ -81,7 +97,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* row */
+/* main */
+
+.container-main h2 {
+    margin-top: 20px;
+}
 
 .row {
     display: flex;
@@ -103,6 +123,11 @@ nav ul li a {
     height: 100%;
 }
 
+.control-buttons {
+    width: calc(100% / 3);
+    height: 100%;
+    border: 1px solid black;
+}
 
 /* media queries */
 
