@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+img {
+    height: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -124,9 +128,128 @@ nav ul li a {
 }
 
 .control-buttons {
-    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100%;
-    border: 1px solid black;
+}
+
+/* footer-left */
+
+.container-music {
+    display: flex;
+    align-items: center;
+}
+
+.container-img {
+    height: 50px;
+    width: 50px;
+}
+
+.music {
+    padding: 0 10px;
+}
+
+.music-text > h4 {
+    color: white;
+}
+
+.music-text > p {
+    color: grey;
+}
+
+.music-icon {
+    margin-left: 30px
+}
+
+.music-icon > a {
+    margin: 5px;
+    color: grey;
+}
+
+
+/* footer-midle */
+
+.play-button {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.play-button > a {
+    text-decoration: none;
+}
+
+.play-button-middle > a {
+    font-size: 20px;
+    margin: 0 20px;
+    color: white;
+}
+
+.play-button-left > a {
+    margin-right: 5px;
+    color: white;
+}
+
+.play-button-right > a {
+    margin-left: 5px;
+    color: white;
+}
+
+.container-timeline {
+    display: flex;
+    align-items: center;
+}
+
+.container-timeline > p {
+    color: white;
+    margin: 0 10px;
+}
+
+.timeline {
+    position: relative;
+    width: 200px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: grey;
+}
+
+.timeline-hover {
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* footer-right */
+
+.audio-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.audio-button-left > a {
+    color: white;
+    margin: 5px;
+}
+
+.audioline {
+    position: relative;
+    width: 100px;
+    height: 5px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    background-color: grey;
+}
+
+.audioline-hover {
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: white;
 }
 
 /* media queries */
