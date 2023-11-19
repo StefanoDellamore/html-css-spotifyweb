@@ -7,7 +7,7 @@
 }
 
 img {
-    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -16,11 +16,13 @@ body {
 
 footer {
     height: 90px;
+    background-color: #282828;
 }
 
 .container {
     display: flex;
     height: calc(100vh - 90px);
+    background-color: #141922;
 }
 
 aside {
@@ -75,12 +77,13 @@ header {
 
 .link-upgrade > a {
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 30px;
     padding: 10px 40px;
     border-radius: 50px;
     text-decoration: none;
-    background-color: red;
+    border: 1px solid white;
+    background-color: #080B12;
     color: white;   
 }
 
@@ -90,7 +93,6 @@ header {
     display: flex;
     justify-content: center;
     list-style: none;
-    color: grey ;
 }
 
 .container-main nav ul li {
@@ -99,6 +101,7 @@ header {
 
 nav ul li a {
     text-decoration: none;
+    color: grey;
 }
 
 /* main */
@@ -116,6 +119,30 @@ nav ul li a {
 .card {
     width: calc(100% / 6 - 20px );
     margin: 0 10px;
+}
+
+.container-main > h2 {
+    color: white;
+    padding-top: 10px;
+}
+
+.container-main > p {
+    color: grey;
+    padding-top: 10px;
+}
+
+.card > h3 {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.card > p {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    color: grey;
 }
 
 /* footer */
@@ -268,21 +295,9 @@ nav ul li a {
 
 /* debug */
 
-footer {
-    background-color: aqua;
-}
-
-.container {
-    background-color: blueviolet;
-}
-
 aside,
 main {
     border: 2px dashed black;
-}
-
-.card {
-    border: 1px dashed black;
 }
 
 .container-aside > * {
